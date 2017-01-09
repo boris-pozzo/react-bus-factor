@@ -1,6 +1,7 @@
 /**
 * @desc Ce component permet d'intégrer facilement le module sidenav de materialize
 */
+import  './sidenav.scss';
 
 class SideNav extends React.Component {
 
@@ -28,7 +29,9 @@ class SideNav extends React.Component {
           <li><a className="subheader">Subheader</a></li>
           <li><a className="waves-effect" href="#!">Third Link With Waves</a></li>
         </ul>
-        <a href="#" data-activates="slide-out" className="button-collapse"><i className="material-icons">menu</i></a>
+        
+          <a href="#" data-activates="slide-out" className="button-collapse position-hamburger right"><i className="material-icons">menu</i></a>
+        
       </div>
     )
   }
