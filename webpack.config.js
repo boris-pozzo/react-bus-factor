@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
 
-    new webpack.optimize.CommonsChunkPlugin( // Permet de découper mon bundle en plusieurs bouts. Un bout 
+    new webpack.optimize.CommonsChunkPlugin( // Permet de découper mon bundle en plusieurs bouts. Un bout
       'vendors',
       'vendors.bundle.js'
     ),
@@ -33,6 +33,13 @@ module.exports = {
          warnings: false
        }
      }),
+
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin(),
 
     new webpack.ProvidePlugin({ // Permet de définir les plugin qu'on veut rendre accessible à tout le scope de notre app.
       'window.$': 'jquery',
