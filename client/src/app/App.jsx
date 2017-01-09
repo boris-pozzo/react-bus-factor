@@ -9,6 +9,7 @@ import Section from '../section/Section.jsx';
 import Nav from '../nav/Nav.jsx';
 import Footer from '../footer/Footer.jsx';
 import Grid from '../grid/Grid.jsx';
+import Carousel from '../carousel/Carousel.jsx';
 
 class App extends React.Component {
 
@@ -24,6 +25,7 @@ class App extends React.Component {
         <Nav />
         <Section>
           <Grid />
+          <Carousel />
         </Section>
         <Parallax imgSrc="http://materializecss.com/images/parallax2.jpg" />
         <Footer />
