@@ -24,8 +24,8 @@ class App extends React.Component {
         <Parallax imgSrc="http://materializecss.com/images/parallax1.jpg" />
         <Nav />
         <Section>
-          <Grid />
           <Carousel />
+          <Grid />
         </Section>
         <Parallax imgSrc="http://materializecss.com/images/parallax2.jpg" />
         <Footer />
